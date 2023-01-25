@@ -1,16 +1,28 @@
+body {
+    font-size: 25px; /* or any other size */
+}
 .form-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 h1 {
     text-align: center;
     font-size: 3em;
     color: #FF0000;
 }
+form{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
 #submit_button {
     display: block;
     margin: 0 auto;
+    width: 100px;
+    height: 50px;
 }
+
 
 
