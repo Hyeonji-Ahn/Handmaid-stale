@@ -13,11 +13,16 @@
           alert("Username field is empty!");
         } else if (password === "") {
           alert("Password field is empty!");
-        } else if (username.includes("Handmaid_")&& password === "MayTheLordOpen") {
+        } else if (username.includes("Handmaid_Of")&& password === "MayTheLordOpen") {
           window.location.href = "handmaids.html";
-          alert("HELLO");
-        } else {
-          alert("Welcome " + username);
+        } else if (username.includes("Wife_")&& password === "MayTheLordOpen") {
+          window.location.href = "handmaids.html";
+        } else if (username.includes("Commander_")&& password === "Omelette") {
+          window.location.href = "commanders.html";
+        } else if (username.includes("Aunt_")&& password === "Magistra") {
+          window.location.href = "commanders.html";
+        }   else {
+          alert("NO USER");
         }
       }
     </script>
@@ -25,21 +30,18 @@
 
   <body class="flex-column">
     <main class="login main">
-      <div class="form-container">
-        <h1>Gilead Post</h1>
-        <form>
-          <label for="username-field">Enter your username:</label>
-          <input type="text" id="username-field" name="username-field">
-          <br>
-          <label for="password-field">Enter your password:</label>
-          <input type="password" id="password-field" name="password-field" required>
-          <br>
-          <input type="submit" id= "submit_button" value="Login" onclick="checkValue()">
-        </form>
+        <div class="form-container">
+          <form>
+            <h1>Gilead Post</h1>
+            <label for="username-field">Enter your username:</label>
+            <input type="text" id="username-field" name="username-field">
+            <br>
+            <label for="password-field">Enter your password:</label>
+            <input type="password" id="password-field" name="password-field" required>
+            <br>
+            <input type="submit" id= "submit_button" value="Login" onclick="checkValue()">
+          </form>
       </div>
     </main>
-    <script type="text/javascript">
-      AOS.init();
-    </script>
   </body>
 </html>
