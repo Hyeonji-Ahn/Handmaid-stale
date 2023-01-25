@@ -1,0 +1,16 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF0000;
+}
+#submit_button {
+    display: block;
+    margin: 0 auto;
+}
+
+
