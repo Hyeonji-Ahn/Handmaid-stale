@@ -32,7 +32,7 @@
   <body class="flex-column">
     <main class="login main">
         <div class="form-container">
-          <form onsubmit="checkValue()">
+          <form>
             <h1>Gilead Post</h1>
             <label for="username-field">Enter your username:</label>
             <input type="text" id="username-field" name="username-field">
@@ -40,10 +40,9 @@
             <label for="password-field">Enter your password:</label>
             <input type="password" id="password-field" name="password-field" required>
             <br>
-            <input type="submit" id= "submit_button" value="Login">
           </form>
+          <input type="submit" id= "submit_button" value="Login" onclick="checkValue()">
       </div>
     </main>
-
   </body>
 </html>
