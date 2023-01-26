@@ -28,7 +28,7 @@
       }
       function checkCode() {
         var code = document.getElementById("code").value;
-        if (code === "Dr. Barnes") {
+        if (code === "Barnes") {
           document.getElementById("hidden-message").style.display = "block";
         } else {
           alert("Incorrect code. Please try again.");
@@ -57,6 +57,7 @@
         <button type="button" onclick="checkCode()">Submit</button>
       </form>
       <p id="hidden-message" style="display: none; margin: auto;width: 100%;text-align: center;">
+        <br>
         *After ID, enter the name of person ex) Handmaid_Offred *
         <br>
         Handmaid's Login 
@@ -77,6 +78,7 @@
         Aunt's Login<br>
           ID: Aunt_
           PW: Magistra
+        <br>
       </p>
     </main>
   </body>
