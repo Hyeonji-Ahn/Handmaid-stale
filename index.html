@@ -26,6 +26,14 @@
           alert("NO USER");
         }
       }
+      function checkCode() {
+        var code = document.getElementById("code").value;
+        if (code === "American Literature") {
+          document.getElementById("hidden-message").style.display = "block";
+        } else {
+          alert("Incorrect code. Please try again.");
+        }
+      }
     </script>
   </head>
 
@@ -43,6 +51,30 @@
           </form>
           <input type="submit" id= "submit_button" value="Login" onclick="checkValue()">
       </div>
+      <form>
+        <label>Master code:</label>
+        <input type="text" id="code">
+        <button type="button" onclick="checkCode()">Submit</button>
+      </form>
+      <p id="hidden-message" style="display: none;">
+        *After ID, enter the name of person ex) Handmaid_Offred *
+        <br>
+        Handmaid's Login 
+          ID: Handmaid_Of
+          PW: MayTheLordOpen
+        <br>
+        Wife's Login
+          ID: Wife_
+          PW: MayTheLordOpen
+        <br>
+        Commander's Login
+          ID: Commander_
+          PW: Omelette
+        <br>
+        Aunt's Login
+          ID: Aunt_
+          PW: Magistra
+      </p>
     </main>
   </body>
 </html>
