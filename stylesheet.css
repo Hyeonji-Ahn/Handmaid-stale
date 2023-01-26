@@ -18,8 +18,10 @@ form{
     text-align: center;
 }
 #submit_button {
-    display: block;
-    margin: auto;
+    position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
     width: 100px;
     height: 50px;
 }
